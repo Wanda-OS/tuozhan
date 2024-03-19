@@ -114,7 +114,18 @@ background-color:Aqua;
     
     </script>
 </body>
- 
+ <script>
+  const menuItems = document.querySelectorAll('.menu-item');
+  for (var i = 0; i < but.length; i++) {
+    but[i].onclick=function (){
+      for (var i = 0; i < but.length; i++) {
+        but[i].style.backgroundColor='';
+      }
+      this.style.backgroundColor='pink';
+    }
+  }
+</script>
+
  
 </html>
  
